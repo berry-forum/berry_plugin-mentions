@@ -14,7 +14,7 @@ import UserPage from 'flarum/components/UserPage'
 import LinkButton from 'flarum/components/LinkButton';
 import MentionsUserPage from './components/MentionsUserPage';
 
-app.initializers.add('flarum-mentions', function() {
+app.initializers.add('starinc-kater_mentions', function() {
   // For every mention of a post inside a post's content, set up a hover handler
   // that shows a preview of the mentioned post.
   addPostMentionPreviews();
@@ -42,13 +42,13 @@ app.initializers.add('flarum-mentions', function() {
     items.add('postMentioned', {
       name: 'postMentioned',
       icon: 'fas fa-reply',
-      label: app.translator.trans('flarum-mentions.forum.settings.notify_post_mentioned_label')
+      label: app.translator.trans('starinc-kater_mentions.forum.settings.notify_post_mentioned_label')
     });
 
     items.add('userMentioned', {
       name: 'userMentioned',
       icon: 'fas fa-at',
-      label: app.translator.trans('flarum-mentions.forum.settings.notify_user_mentioned_label')
+      label: app.translator.trans('starinc-kater_mentions.forum.settings.notify_user_mentioned_label')
     });
   });
 
@@ -60,7 +60,7 @@ app.initializers.add('flarum-mentions', function() {
       LinkButton.component({
         href: app.route('user.mentions', {username: user.username()}),
         name: 'mentions',
-        children: [app.translator.trans('flarum-mentions.forum.user.mentions_link')],
+        children: [app.translator.trans('starinc-kater_mentions.forum.user.mentions_link')],
         icon: 'fas fa-at'
       }),
       80

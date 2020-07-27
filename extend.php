@@ -62,6 +62,6 @@ return [
         $events->listen(Rendering::class, Listener\FormatPostMentions::class);
         $events->listen(Rendering::class, Listener\FormatUserMentions::class);
 
-        $views->addNamespace('flarum-mentions', __DIR__.'/views');
+        $views->addNamespace('starinc-kater_mentions', __DIR__.'/views');
     },
 ];

@@ -48,7 +48,7 @@ class ConfigureMentions
 
         $tag->template = '<a href="{$PROFILE_URL}{@username}" class="UserMention">@<xsl:value-of select="@displayname"/></a>';
         $tag->filterChain->prepend([static::class, 'addUserId'])
-            ->setJS('function(tag) { return flarum.extensions["flarum-mentions"].filterUserMentions(tag); }');
+            ->setJS('function(tag) { return flarum.extensions["starinc-kater_mentions"].filterUserMentions(tag); }');
 
         $config->Preg->match('/\B@(?<username>[-_a-zA-Z0-9\x7f-\xff]+)(?!#)/i', $tagName);
     }
@@ -86,7 +86,7 @@ class ConfigureMentions
 
         $tag->filterChain
             ->prepend([static::class, 'addPostId'])
-            ->setJS('function(tag) { return flarum.extensions["flarum-mentions"].filterPostMentions(tag); }');
+            ->setJS('function(tag) { return flarum.extensions["starinc-kater_mentions"].filterPostMentions(tag); }');
 
         $config->Preg->match('/\B@(?<username>[-_a-zA-Z0-9\x7f-\xff]+)#(?<id>\d+)/i', $tagName);
     }
