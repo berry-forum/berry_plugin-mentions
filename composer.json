@@ -1,13 +1,17 @@
 {
-    "name": "flarum/mentions",
-    "description": "Mention and reply to specific posts and users.",
+    "name": "starinc/kater_mentions",
+    "description": "Mention and reply to specific posts and users for Kater.",
     "type": "flarum-extension",
-    "keywords": ["discussion"],
+    "keywords": [
+        "discussion"
+    ],
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/flarum/core/issues",
-        "source": "https://github.com/flarum/mentions"
-    },
+    "authors": [
+        {
+            "name": "SuperSonic",
+            "email": "supersonic@livemail.tw"
+        }
+    ],
     "require": {
         "flarum/core": "^0.1.0-beta.13"
     },
@@ -17,9 +21,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        },
         "flarum-extension": {
             "title": "Mentions",
             "icon": {
