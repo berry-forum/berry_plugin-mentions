@@ -9,4 +9,6 @@
 
 use Flarum\Database\Migration;
 
-return Migration::renameTable('mentions_posts', 'post_mentions_post');
+if (Schema::hasTable('mentions_posts')) {
+    return Migration::renameTable('mentions_posts', 'post_mentions_post');
+}
