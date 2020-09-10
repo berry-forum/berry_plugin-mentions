@@ -7,9 +7,6 @@
  * LICENSE file that was distributed with this source code.
  */
 
-use Flarum\Database\Schema;
 use Flarum\Database\Migration;
 
-if (Schema::hasTable('mentions_users')) {
-    return Migration::renameTable('mentions_users', 'post_mentions_user');
-}
+return Migration::renameTable('mentions_users', 'post_mentions_user');
