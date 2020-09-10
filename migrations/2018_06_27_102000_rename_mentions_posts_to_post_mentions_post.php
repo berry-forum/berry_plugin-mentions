@@ -7,6 +7,7 @@
  * LICENSE file that was distributed with this source code.
  */
 
+use Flarum\Database\Schema;
 use Flarum\Database\Migration;
 
 if (Schema::hasTable('mentions_posts')) {
