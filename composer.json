@@ -1,6 +1,6 @@
 {
-    "name": "starinc/kater_mentions",
-    "description": "Mention and reply to specific posts and users for Kater.",
+    "name": "starinc/nex_mentions",
+    "description": "Mention and reply to specific posts and users for Nex.",
     "type": "flarum-extension",
     "keywords": [
         "discussion"
