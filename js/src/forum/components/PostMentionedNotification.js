@@ -18,7 +18,7 @@ export default class PostMentionedNotification extends Notification {
     const notification = this.props.notification;
     const user = notification.fromUser();
 
-    return app.translator.transChoice('starinc-kater_mentions.forum.notifications.post_mentioned_text', 1, {user});
+    return app.translator.transChoice('starinc-nex_mentions.forum.notifications.post_mentioned_text', 1, {user});
   }
 
   excerpt() {

@@ -10,7 +10,7 @@ export default class PostQuoteButton extends Button {
 
     this.props.className = 'Button PostQuoteButton';
     this.props.icon = 'fas fa-quote-left';
-    this.props.children = app.translator.trans('starinc-kater_mentions.forum.post.quote_button');
+    this.props.children = app.translator.trans('starinc-nex_mentions.forum.post.quote_button');
     this.props.onclick = () => {
       this.hide();
       reply(post, content);

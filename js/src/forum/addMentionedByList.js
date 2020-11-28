@@ -96,7 +96,7 @@ export default function addMentionedByList() {
                config={m.route}
                onclick={hidePreview}
                data-number={reply.number()}>
-              {app.session.user === user ? app.translator.trans('starinc-kater_mentions.forum.post.you_text') : username(user)}
+              {app.session.user === user ? app.translator.trans('starinc-nex_mentions.forum.post.you_text') : username(user)}
             </a>
           );
         });
@@ -108,7 +108,7 @@ export default function addMentionedByList() {
         const count = repliers.length - names.length;
 
         names.push(
-          app.translator.transChoice('starinc-kater_mentions.forum.post.others_text', count, {count})
+          app.translator.transChoice('starinc-nex_mentions.forum.post.others_text', count, {count})
         );
       }
 
@@ -116,7 +116,7 @@ export default function addMentionedByList() {
         <div className="Post-mentionedBy" config={config}>
           <span className="Post-mentionedBy-summary">
             {icon('fas fa-reply')}
-            {app.translator.transChoice('starinc-kater_mentions.forum.post.mentioned_by' + (repliers[0].user() === app.session.user ? '_self' : '') + '_text', names.length, {
+            {app.translator.transChoice('starinc-nex_mentions.forum.post.mentioned_by' + (repliers[0].user() === app.session.user ? '_self' : '') + '_text', names.length, {
               count: names.length,
               users: punctuateSeries(names)
             })}

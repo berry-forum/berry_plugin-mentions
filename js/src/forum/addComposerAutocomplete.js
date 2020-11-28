@@ -140,7 +140,7 @@ export default function addComposerAutocomplete() {
                   const user = post.user();
                   suggestions.push(
                     makeSuggestion(user, '@' + user.username() + '#' + post.id(), [
-                      app.translator.trans('starinc-kater_mentions.forum.composer.reply_to_post_text', {number: post.number()}), ' — ',
+                      app.translator.trans('starinc-nex_mentions.forum.composer.reply_to_post_text', {number: post.number()}), ' — ',
                       truncate(post.contentPlain(), 200)
                     ], 'MentionsDropdown-post')
                   );
@@ -197,7 +197,7 @@ export default function addComposerAutocomplete() {
   extend(TextEditor.prototype, 'toolbarItems', function(items) {
     items.add('mention', (
       <TextEditorButton onclick={() => this.insertAtCursor('@')} icon="fas fa-at">
-        {app.translator.trans('starinc-kater_mentions.forum.composer.mention_tooltip')}
+        {app.translator.trans('starinc-nex_mentions.forum.composer.mention_tooltip')}
       </TextEditorButton>
     ));
   });

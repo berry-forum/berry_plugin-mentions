@@ -64,7 +64,7 @@ class PostMentionedBlueprint implements BlueprintInterface, MailableInterface
      */
     public function getEmailView()
     {
-        return ['text' => 'starinc-kater_mentions::emails.postMentioned'];
+        return ['text' => 'starinc-nex_mentions::emails.postMentioned'];
     }
 
     /**
